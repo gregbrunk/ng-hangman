@@ -65,11 +65,11 @@ HangmanGame.prototype.wordSoFar = function() {
 // determines win/lose status
 HangmanGame.prototype.isWinner = function() {
   if(this.triesRemaining === 0) {
-    console.log("Sorry, you loose.")
+    console.log("Sorry, you loose.");
     this.gameWon = false;
   // user wins if there are no more underscores in word
 } else if( !this.isLetterInWord("_", this.completedWord) ) {
-    console.log("Yay, you win!")
+    console.log("Yay, you win!");
     this.gameWon = true;
   } else {
     this.gameWon = null;
